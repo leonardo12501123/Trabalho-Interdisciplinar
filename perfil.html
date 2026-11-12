@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Let&Léo Pizzaria: pizzas artesanais, cardápio, pedidos e delivery.">
+    <title>Meu perfil | Let&Léo Pizzaria</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="">
+    <header class="site-header"><a class="brand" href="index.html"><img src="img/logo-letleo.png"
+                alt="Let&Léo Pizzaria"><span>Let<span class="red">&</span>Léo<small>PIZZARIA
+                    ARTESANAL</small></span></a><button class="menu-toggle icon-button" id="menuToggle"
+            aria-label="Abrir menu">☰</button>
+        <nav id="nav" aria-label="Navegação principal"><a href="index.html" data-nav="inicio">Início</a><a
+                href="cardapio.html" data-nav="cardapio">Cardápio</a><a href="index.html#sobre">Sobre nós</a><a
+                href="index.html#promocao">Promoções</a><a href="contato.html" data-nav="contato">Contato</a></nav>
+        <div class="header-actions"><button id="themeToggle" class="icon-button"
+                aria-label="Alternar modo claro e escuro">☀</button><a class="icon-button cart-link"
+                href="carrinho.html" aria-label="Carrinho">🛒<span id="cartCount">0</span></a><a
+                class="button button-outline auth-link" href="login.html">Entrar</a><a
+                class="button button-primary register-link" href="cadastro.html">Cadastrar</a></div>
+    </header>
+    <main>
+        <section class="page-banner compact"><span class="eyebrow">SUA CONTA</span>
+            <h1>Meu perfil</h1>
+            <p>Gerencie seus dados pessoais.</p>
+        </section>
+        <section class="section profile-layout">
+            <aside class="profile-nav"><a class="selected" href="perfil.html">◉ Meus dados</a><a href="pedidos.html">▣
+                    Meus pedidos</a><a href="carrinho.html">🛒 Meu carrinho</a><button id="logoutButton"
+                    class="button button-outline full">Sair da conta</button></aside>
+            <div class="profile-card">
+                <h2>Dados pessoais</h2>
+                <p>Você pode atualizar suas informações a qualquer momento.</p>
+                <div id="profileGuest" class="empty-state" hidden>Faça login para visualizar seus dados. <a
+                        href="login.html">Entrar</a></div>
+                <form id="profileForm" class="form-stack"><label>Nome completo<input name="nome" required
+                            maxlength="80"></label><label>E-mail<input name="email" type="email" required
+                            maxlength="100"></label><label>Telefone<input name="telefone" data-mask="phone"
+                            inputmode="numeric" maxlength="15" required></label><label>CPF<input name="cpf"
+                            data-mask="cpf" inputmode="numeric" maxlength="14" readonly></label><button type="submit"
+                        class="button button-primary">Salvar alterações</button></form>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div>
+            <div class="footer-brand">Let<span>&</span>Léo</div>
+            <p>Mais que pizza, é momento.</p>
+        </div>
+        <div><strong>Explore</strong><a href="index.html">Início</a><a href="cardapio.html">Cardápio</a><a
+                href="contato.html">Contato</a></div>
+        <div><strong>Minha conta</strong><a href="perfil.html">Meu perfil</a><a href="pedidos.html">Meus pedidos</a><a
+                href="carrinho.html">Carrinho</a></div>
+        <div><strong>Atendimento</strong>
+            <p>Delivery artesanal com sabor de verdade.</p>
+            <p>Seg–Dom · 18h às 23h</p>
+        </div>
+        <div class="footer-bottom">© 2026 Let&Léo Pizzaria · Projeto acadêmico demonstrativo. Preços e dados
+            ilustrativos.</div>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="js/dados.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
